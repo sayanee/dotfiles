@@ -1,0 +1,25 @@
+[user]
+	name = Sayanee
+	email = sayanee@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+	added = yellow
+  changed = green
+  untracked = cyan
+[core]
+	excludesfile = /Users/sayanee/.gitignore
+[push]
+	default = matching
