@@ -63,5 +63,6 @@ alias gl='git log --decorate --oneline --graph --all --since=2.weeks '
 alias gh='git log --decorate --oneline --graph --all --pretty="%h, %cr, %s" --since=2.weeks'
 alias gr='git add -u && git commit -m '
 alias gs='git status '
+alias gp='git pull && git push'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
