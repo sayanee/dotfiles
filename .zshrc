@@ -27,6 +27,7 @@ export PATH=/Users/sayanee/scripts:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=$PATH:/opt/node/bin
 export PATH=${PATH}:/Developer/usr/bin
+export PATH=$PATH:/Applications/MAMP/Library/bin
 
 export LC_CTYPE="utf-8"
 
@@ -36,33 +37,30 @@ export LC_CTYPE="utf-8"
 alias ..='cd ..'					# 1 level up
 alias ...='cd ../..'			  # 2 levels up
 alias ....='cd ../../..'		# 3 levels up
-alias rd='rm -rf'					# remove folders recurseively
-alias desk='cd ~/Desktop'	# cd to desktop
 alias c='clear'						# clear
+alias desk='cd ~/Desktop'	# cd to desktop
 alias ll='ls -al'					# list all files/folders/hidden with permission
-alias cp="cp -iv"      		# interactive, verbose
-alias rm="rm -i"      		# interactive
-alias mv="mv -iv"      		# interactive, verbose
 alias grep="grep -i"  		# ignore case
+alias mv="mv -iv"      		# interactive, verbose
 alias man="man -a"				# show all sections for manuals
+alias rd='rm -rf'					# remove folders recurseively
+alias rm="rm -i"      		# interactive
 alias sb="subl ."				  # open the entire folder in sublime text
 
 alias svpy="python -m SimpleHTTPServer 8000 && open http://localhost:8000"
 alias svqed"sh server.sh"
 
 alias prof='subl ~/.zshrc'
-alias d='subl ~/Dropbox/done.todo'
 
-alias gs='git status '
 alias ga='git add '
 alias gb='git branch '
 alias gc='git add . && git commit -m '
 alias gd='git diff '
-alias go='git checkout '
+alias gh='git push heroku master && heroku run rake db:migrate && heroku restart && heroku open'
 alias gl='git log --decorate --oneline --graph --all --since=2.weeks '
-alias gh='git log --decorate --oneline --graph --all --pretty="%h, %cr, %s" --since=2.weeks'
+alias go='git checkout '
+alias gp='git pull && git push'
 alias gr='git add -u && git commit -m '
 alias gs='git status '
-alias gp='git pull && git push'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
