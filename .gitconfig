@@ -21,5 +21,7 @@
   untracked = cyan
 [core]
 	excludesfile = /Users/sayanee/.gitignore
+[credential]
+  helper = osxkeychain
 [push]
 	default = matching
