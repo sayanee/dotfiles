@@ -1,9 +1,9 @@
 {
   "bitwise": true,
-  "camelcase": false, // need to cater for ruby variables with underscore
+  "camelcase": false,
   "curly": false,
   "eqeqeq": true,
-  "es3": false, // sometimes ES5 might be used
+  "es3": false,
   "forin": true,
   "freeze": true,
   "immed": true,
