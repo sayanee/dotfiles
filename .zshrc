@@ -7,10 +7,12 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/sayanee/.rvm/bin:/Users/sayanee/Workspace/scripts"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/sayanee/.rvm/bin:/Users/sayanee/Workspace/scripts"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 export CLICOLOR=1
 export LSCOLORS="gafxcxdxbxegedabagacad"
 export LC_CTYPE="utf-8"
@@ -19,7 +21,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias c='clear'
-alias desk='cd ~/Desktop'
+alias desk='cd ~/Desktop && clear'
 alias ll='ls -al'
 alias man="man -a"
 alias rd='rm -rf'
