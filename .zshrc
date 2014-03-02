@@ -6,6 +6,7 @@ export UPDATE_ZSH_DAYS=13
 COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+unsetopt SHARE_HISTORY
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/sayanee/.rvm/bin:/Users/sayanee/Workspace/scripts"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -22,7 +23,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias c='clear'
 alias desk='cd ~/Desktop && clear'
-alias ll='ls -al'
+alias ll='ls -lah'
 alias man="man -a"
 alias rd='rm -rf'
 alias rm="rm -i"
@@ -39,6 +40,8 @@ alias go='git checkout '
 alias gp='git pull && git push'
 alias gr='git add -u && git commit -m '
 alias gs='git status '
+
+alias screenshare='open /System/Library/CoreServices/Screen\ Sharing.app/'
 
 # https://gist.github.com/SlexAxton/4989674
 gifify() {
