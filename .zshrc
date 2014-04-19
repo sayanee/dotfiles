@@ -16,7 +16,8 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export CLICOLOR=1
 export LSCOLORS="gafxcxdxbxegedabagacad"
-export LC_CTYPE="utf-8"
+export LC_CTYPE="en_US.UTF-8"
+export LANG="en_US.UTF-8"
 
 alias ..='cd ..'
 alias ...='cd ../..'
