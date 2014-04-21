@@ -10,11 +10,8 @@
 1. `bira.zsh-theme`: oh-my-zsh prompt
 1. `LICENSE`: MIT License
 
-Create symlinks from this repository to each of the locations:
+delete previous files and create symlinks form this repository:
 
 ```
-ln -s ~/Workspace/dotfiles/.gitignore ~/.gitignore
-ln -s ~/Workspace/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/Workspace/dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/Workspace/dotfiles/.zshrc ~/.zshrc
+./linkall
 ```
