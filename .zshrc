@@ -27,10 +27,10 @@ alias desk='cd ~/Desktop && clear'
 alias ll='ls -lah'
 alias man="man -a"
 alias rd='rm -rf'
-alias rm="rm -i"
 
 alias server="python -m SimpleHTTPServer 8000 && open http://localhost:8000"
 alias prof='subl ~/.zshrc'
+alias src='source ~/.zshrc'
 
 alias ga='git add '
 alias gb='git branch '
