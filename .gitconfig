@@ -25,3 +25,5 @@
   helper = osxkeychain
 [push]
 	default = matching
+[mergetool]
+	keepBackup = true
