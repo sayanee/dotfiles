@@ -4,7 +4,7 @@ CASE_SENSITIVE="false"
 SHELL="/bin/zsh"
 export UPDATE_ZSH_DAYS=13
 COMPLETION_WAITING_DOTS="true"
-plugins=(git)
+plugins=(git git-flow)
 source $ZSH/oh-my-zsh.sh
 unsetopt SHARE_HISTORY
 
@@ -58,3 +58,5 @@ gifify() {
     echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
   fi
 }
+
+source ~/.git-flow-completion.zsh
