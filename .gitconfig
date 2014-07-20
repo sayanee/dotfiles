@@ -24,6 +24,8 @@
 [credential]
   helper = osxkeychain
 [push]
-	default = matching
+	default = simple
 [mergetool]
 	keepBackup = true
+[help]
+  autocorrect = 10
