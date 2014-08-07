@@ -5,12 +5,14 @@ SHELL="/bin/zsh"
 export UPDATE_ZSH_DAYS=13
 COMPLETION_WAITING_DOTS="true"
 plugins=(git git-flow docker)
+
 source $ZSH/oh-my-zsh.sh
+# source ~/git-flow-completion.zsh
 unsetopt SHARE_HISTORY
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/sayanee/.rvm/bin:/Users/sayanee/Workspace/scripts"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+# [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
@@ -29,6 +31,9 @@ alias ll='ls -lah'
 alias man="man -a"
 alias rd='rm -rf'
 
+alias dock='boot2docker start && export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375'
+
+alias j='autojump'
 alias server="python -m SimpleHTTPServer 8000 && open http://localhost:8000"
 alias prof='subl ~/.zshrc'
 alias src='source ~/.zshrc'
@@ -59,5 +64,3 @@ gifify() {
     echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
   fi
 }
-
-source ~/.git-flow-completion.zsh
