@@ -4,7 +4,7 @@ CASE_SENSITIVE="false"
 SHELL="/bin/zsh"
 export UPDATE_ZSH_DAYS=13
 COMPLETION_WAITING_DOTS="true"
-plugins=(git git-flow)
+plugins=(git git-flow docker)
 source $ZSH/oh-my-zsh.sh
 unsetopt SHARE_HISTORY
 
@@ -24,6 +24,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias c='clear'
 alias desk='cd ~/Desktop && clear'
+alias dock='boot2docker start && export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375'
 alias ll='ls -lah'
 alias man="man -a"
 alias rd='rm -rf'
