@@ -33,3 +33,5 @@
 	trustExitCode = true
 [help]
   autocorrect = 10
+[mergetool]
+	keepBackup = true
