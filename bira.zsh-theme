@@ -13,7 +13,7 @@ else
 fi
 local node_version='%{$fg[red]%}‹node-`node -v`›%{$reset_color%}'
 local git_branch='$(git_prompt_info)%{$reset_color%}'
-local time_now='%{$fg[black]%}%t%{$reset_color%}'
+local time_now='%{$fg[black]%}%*%{$reset_color%}'
 
 PROMPT="╭─${user_host} on${current_dir} ${rvm_ruby} ${node_version} ${git_branch}
 ╰─${time_now} %B$%b "
