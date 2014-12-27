@@ -7,6 +7,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git git-flow docker)
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
+source ~/.sparkrc
 unsetopt SHARE_HISTORY
 
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/sayanee/.rvm/bin:/Users/sayanee/Workspace/scripts"
@@ -16,10 +17,12 @@ export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Us
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
 
+export EDITOR='subl'
 export CLICOLOR=1
 export LSCOLORS="gafxcxdxbxegedabagacad"
 export LC_CTYPE="en_US.UTF-8"
 export LANG="en_US.UTF-8"
+export CLOSURE_PATH="/usr/local/Cellar/closure-compiler/20140814/libexec"
 
 alias ..='cd ..'
 alias ...='cd ../..'
