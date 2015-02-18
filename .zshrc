@@ -17,7 +17,6 @@ export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Us
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
 
-export EDITOR='subl'
 export CLICOLOR=1
 export LSCOLORS="gafxcxdxbxegedabagacad"
 export LC_CTYPE="en_US.UTF-8"
@@ -45,10 +44,11 @@ alias gb='git branch '
 alias gc='git add . && git commit -m '
 alias gj='git push origin master && git status && git checkout gh-pages && git rebase master && git push origin gh-pages && git checkout master && git status'
 alias gl="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(cyan)%s%C(reset) %C(cyan)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
-alias go='git checkout '
+alias goo='git checkout '
 alias gp='git pull && git push'
 alias gr='git add -u && git commit -m '
 alias gs='git status '
+alias gsq='git rebase -i master'
 
 alias screenshare='open /System/Library/CoreServices/Screen\ Sharing.app/'
 
