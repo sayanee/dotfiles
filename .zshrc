@@ -4,7 +4,7 @@ CASE_SENSITIVE="false"
 SHELL="/bin/zsh"
 export UPDATE_ZSH_DAYS=13
 COMPLETION_WAITING_DOTS="true"
-plugins=(git git-flow docker)
+plugins=(git git-flow docker bgnotify)
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
 source ~/.sparkrc
@@ -18,11 +18,15 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
 
 export CLICOLOR=1
+export EDITOR="subl -w"
 export LSCOLORS="gafxcxdxbxegedabagacad"
 export LC_CTYPE="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export CLOSURE_PATH="/usr/local/Cellar/closure-compiler/20140814/libexec"
 
+killport() {
+  kill -TERM `lsof -t -i:$1`
+}
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -66,3 +70,6 @@ gifify() {
     echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
   fi
 }
+
+# added by travis gem
+[ -f /Users/sayanee/.travis/travis.sh ] && source /Users/sayanee/.travis/travis.sh

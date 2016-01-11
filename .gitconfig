@@ -5,7 +5,7 @@
 	diff = auto
 	status = auto
 	branch = auto
-	ui = true
+	ui = always
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -24,7 +24,7 @@
 [credential]
   helper = osxkeychain
 [push]
-	default = matching
+	default = simple
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -35,3 +35,10 @@
   autocorrect = 10
 [mergetool]
 	keepBackup = true
+[alias]
+	dc = "diff --cached"
+	log1 = "log --oneline"
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
