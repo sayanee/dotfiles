@@ -18,7 +18,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=/Applications/Postgres93.app/Contents/MacOS/bin:$PATH
 
 export CLICOLOR=1
-export EDITOR="subl -w"
+export EDITOR="atom"
 export LSCOLORS="gafxcxdxbxegedabagacad"
 export LC_CTYPE="en_US.UTF-8"
 export LANG="en_US.UTF-8"
@@ -40,7 +40,7 @@ alias rd='rm -rf'
 alias dock='boot2docker start && export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375'
 
 alias server="python -m SimpleHTTPServer 8000 && open http://localhost:8000"
-alias prof='subl ~/.zshrc'
+alias prof='atom ~/.zshrc'
 alias src='source ~/.zshrc'
 
 alias ga='git add '
