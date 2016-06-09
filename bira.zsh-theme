@@ -1,16 +1,22 @@
-# ZSH Theme - Preview: http://gyazo.com/8becc8a7ed5ab54a0262a470555c3eed.png
-local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
+rvm_current() {
+  rvm current 2>/dev/null
+}
 
-local user_host='%{$fg[blue]%}%n@%m%{$reset_color%}'
-local current_dir='%{$fg[green]%} %~%{$reset_color%}'
-local rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
-local node_version='%{$fg[red]%}‹node-`node -v`›%{$reset_color%}'
-local git_branch='$(git_prompt_info)%{$reset_color%}'
-local time_now='%{$fg[black]%}%*%{$reset_color%}'
+rbenv_version() {
+  rbenv version 2>/dev/null | awk '{print $1}'
+}
 
-PROMPT="╭─${current_dir} ${rvm_ruby} ${node_version} ${git_branch}
-╰─${time_now} %B$%b "
-RPS1="${return_code}"
+node_current() {
+	nvm version 2>/dev/null
+}
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
-ZSH_THEME_GIT_PROMPT_SUFFIX="› %{$reset_color%}"
+PROMPT='%n: %{$fg_bold[blue]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) %{$fg_bold[red]%}<$(rvm_current)> <node:$(node_current)>%{$reset_color%}
+%{$fg_bold[grey]%}%*%{$reset_color%} $ '
+
+ZSH_THEME_GIT_PROMPT_PREFIX=" on%{$fg[magenta]%} "
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}!"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}?"
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+
+RPROMPT='%{$fg_bold[red]%}$(rbenv_version)%{$reset_color%}'
