@@ -10,7 +10,7 @@
 1. `bira.zsh-theme`: oh-my-zsh prompt
 1. `LICENSE`: MIT License
 
-delete previous files and create symlinks form this repository:
+delete previous files and create symlinks from this repository:
 
 ```
 ./linkall
