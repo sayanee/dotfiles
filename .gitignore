@@ -42,6 +42,6 @@ Thumbs.db
 .Trashes
 ehthumbs.db
 
-# Cache an Temp Files #
+# Cache and Temp Files #
 #######################
 .sass-cache
