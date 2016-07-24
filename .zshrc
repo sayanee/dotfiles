@@ -58,7 +58,8 @@ killport() {
   kill -TERM `lsof -t -i:$1`
 }
 
-# get_test google.com
+# get_test localhost:4000
+# dependancy: brew install pv
 http_test() {
   while true; do
     curl $1 -s > /dev/null
