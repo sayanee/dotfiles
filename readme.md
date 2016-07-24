@@ -7,7 +7,7 @@
 | `.bowerrc` | [bower config](https://github.com/bower/bower#custom-install-directory) | `~/.bowerrc` |
 | `.csslintrc` | [css lint](https://github.com/stubbornella/csslint/wiki/Rules) | `~/.csslintrc` |
 | `.gemrc` | | `~/.gemrc` |
-| `.gitconfig` | global [git config](http://git-scm.com/docs/git-config) | `~/.gitconfig` |
+| `.gitconfig` | global [git config](http://git-scm.com/docs/git-config) - remove gpg signingkey | `~/.gitconfig` |
 | `.gitignore` | global [git ignore](https://help.github.com/articles/ignoring-files) | `~/.gitignore` |
 | `.jscs.json` | javascript [style checker](https://npmjs.org/package/jscs) | project folder
 | `.tmux.conf` | tmux configuration file | |
