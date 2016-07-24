@@ -59,13 +59,17 @@ killport() {
 }
 
 # get_test localhost:4000
-# dependancy: brew install pv
 http_test() {
   while true; do
-    curl $1 -s > /dev/null
-    echo .
-    sleep 0.1
-  done | pv -l > /dev/null
+    resp=$(curl --write-out "Status : %{http_code}, Response Time: %{time_total}s" $1 -s --output /dev/null)
+    echo `date "+%H:%M:%S"`, $resp
+    if  [ -z "$2" ]; then
+      sleepTime=0.1
+    else
+      sleepTime=$2
+    fi
+    sleep $sleepTime
+  done
 }
 
 [ -f /Users/sayanee/.travis/travis.sh ] && source /Users/sayanee/.travis/travis.sh
