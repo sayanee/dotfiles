@@ -12,6 +12,6 @@
 | `.jscs.json` | javascript [style checker](https://npmjs.org/package/jscs) | project folder
 | `.tmux.conf` | tmux configuration file | |
 | `.zshrc` | zsh profile | `~/.zshrc` |
-| `.zshenv` | zsh profile | `~/.zshenv` |
+| `.zshenv` | zsh environment variables | `~/.zshenv` |
 | `sayanee.zsh-theme` | oh-my-zsh prompt | `~/.oh-my-zsh/themes/sayanee.zsh-theme` |
 | `config.cson` | Atom text editor user config | `~/.atom/config.cson` |
