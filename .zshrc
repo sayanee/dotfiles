@@ -53,8 +53,18 @@ gifify() {
   fi
 }
 
+# killport 4000
 killport() {
   kill -TERM `lsof -t -i:$1`
+}
+
+# get_test google.com
+http_test() {
+  while true; do
+    curl $1 -s > /dev/null
+    echo .
+    sleep 0.1
+  done | pv -l > /dev/null
 }
 
 [ -f /Users/sayanee/.travis/travis.sh ] && source /Users/sayanee/.travis/travis.sh
