@@ -1,0 +1,49 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "background-tips"
+      "atom-background-pic"
+      "emmet"
+      "markdown-preview"
+    ]
+    excludeVcsIgnoredPaths: false
+    packagesWithKeymapsDisabled: []
+  "custom-title":
+    template: "<%= fileName %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
+  editor:
+    autoIndentOnPaste: false
+    backUpBeforeSaving: true
+    fontSize: 16
+    invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    zoomFontWhenCtrlScrolling: true
+  "exception-reporting":
+    userId: "cb345b98-ed45-3ffe-9a2d-54371b01527c"
+  "markdown-preview":
+    breakOnSingleNewline: true
+    useGitHubStyle: true
+  "markdown-preview-plus":
+    useGitHubStyle: true
+  mcduino:
+    arduinoPath: "/Applications/Arduino.app"
+  metrics:
+    userId: "423b559e49c3707491c368339ebc4508d189d93f"
+  "one-dark-ui": {}
+  pigments:
+    extendAutocompleteToColorValue: true
+    extendAutocompleteToVariables: true
+  "release-notes":
+    viewedVersion: "0.94.0"
+  "todo-show": {}
+  "tree-view":
+    squashDirectoryNames: true
+  "tree-view-open-files": {}
+  welcome:
+    showOnStartup: false

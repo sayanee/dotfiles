@@ -1,17 +1,17 @@
-#dotfiles
+# dotfiles
 
-1. `.bowerrc`: [bower config](https://github.com/bower/bower#custom-install-directory)
-1. `.csslintrc`: [css lint](https://github.com/stubbornella/csslint/wiki/Rules)
-1. `.gitconfig`: [git config](http://git-scm.com/docs/git-config)
-1. `.gitignore`: global [git ignore](https://help.github.com/articles/ignoring-files)
-1. `.jscs.json`: javascript [style checker](https://npmjs.org/package/jscs)
-1. `.tmux.conf`: tmux configuration file
-1. `.zshrc`: on my zsh profile, theme and prompt
-1. `bira.zsh-theme`: oh-my-zsh prompt
-1. `LICENSE`: MIT License
+> various dotfiles and config
 
-delete previous files and create symlinks from this repository:
-
-```
-./linkall
-```
+| file | description | location |
+| --- | --- | --- |
+| `.bowerrc` | [bower config](https://github.com/bower/bower#custom-install-directory) | `~/.bowerrc` |
+| `.csslintrc` | [css lint](https://github.com/stubbornella/csslint/wiki/Rules) | `~/.csslintrc` |
+| `.gemrc` | | `~/.gemrc` |
+| `.gitconfig` | global [git config](http://git-scm.com/docs/git-config) | `~/.gitconfig` |
+| `.gitignore` | global [git ignore](https://help.github.com/articles/ignoring-files) | `~/.gitignore` |
+| `.jscs.json` | javascript [style checker](https://npmjs.org/package/jscs) | project folder
+| `.tmux.conf` | tmux configuration file | |
+| `.zshrc` | zsh profile | `~/.zshrc` |
+| `.zshenv` | zsh profile | `~/.zshenv` |
+| `sayanee.zsh-theme` | oh-my-zsh prompt | `~/.oh-my-zsh/themes/sayanee.zsh-theme` |
+| `config.cson` | Atom text editor user config | `~/.atom/config.cson` |
