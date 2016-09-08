@@ -10,7 +10,6 @@ source $ZSH/oh-my-zsh.sh
 
 # link other config
 source ~/.git-flow-completion.zsh
-source ~/.sparkrc
 
 # common alias
 alias ..='cd ..'
