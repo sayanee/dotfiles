@@ -4,7 +4,7 @@ ZSH_THEME="sayanee"
 CASE_SENSITIVE="false"
 SHELL="/bin/zsh"
 COMPLETION_WAITING_DOTS="true"
-plugins=(git git-flow docker bgnotify)
+plugins=(git git-flow docker bgnotify zsh-syntax-highlighting)
 unsetopt SHARE_HISTORY
 source $ZSH/oh-my-zsh.sh
 
