@@ -5,11 +5,11 @@
     audioBeep: false
     disabledPackages: []
     excludeVcsIgnoredPaths: false
+    packagesWithKeymapsDisabled: []
     themes: [
       "one-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
-    packagesWithKeymapsDisabled: []
   "custom-title":
     template: "<%= fileName %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
   editor:
@@ -35,3 +35,9 @@
   "tree-view-open-files": {}
   welcome:
     showOnStartup: false
+  wordcount:
+    alwaysOn: true
+    noextension: true
+".css.source.stylus":
+  editor:
+    preferredLineLength: 120
