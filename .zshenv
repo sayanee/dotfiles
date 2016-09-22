@@ -11,6 +11,7 @@ export PATH=/sbin:$PATH
 export PATH=/usr/sbin:$PATH
 export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 export PATH=/opt/X11/bin:$PATH
 export PATH=~/.rvm/bin:$PATH
