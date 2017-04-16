@@ -3,19 +3,18 @@
     enabled: true
   core:
     audioBeep: false
-    disabledPackages: []
     excludeVcsIgnoredPaths: false
     packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "one-light-ui"
+      "one-light-syntax"
     ]
   "custom-title":
     template: "<%= fileName %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
   editor:
-    autoIndentOnPaste: false
     backUpBeforeSaving: true
-    fontSize: 16
+    fontSize: 19
     invisibles: {}
     preferredLineLength: 120
     scrollPastEnd: true
@@ -31,6 +30,7 @@
   "release-notes":
     viewedVersion: "0.94.0"
   "tree-view":
+    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   "tree-view-open-files": {}
   welcome:

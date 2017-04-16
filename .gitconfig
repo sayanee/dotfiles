@@ -1,6 +1,7 @@
 [user]
 	name = Sayanee
 	email = sayanee@gmail.com
+	signingkey = EA94B78D
 [color]
 	diff = auto
 	status = auto
@@ -44,3 +45,5 @@
 	smudge = git-lfs smudge %f
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg

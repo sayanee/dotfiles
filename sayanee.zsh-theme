@@ -7,7 +7,7 @@ node_current() {
 	node -v 2>/dev/null
 }
 
-PROMPT='%n: %{$fg_bold[blue]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) %{$fg_bold[red]%}<$(rvm_current)> <node:$(node_current)>%{$reset_color%}
+PROMPT='%n: %{$fg_bold[blue]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) %{$fg_bold[red]%} <node:$(node_current)>%{$reset_color%}
 %{$fg_bold[green]%}%*%{$reset_color%} $ '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" on%{$fg[magenta]%} "

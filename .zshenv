@@ -17,3 +17,4 @@ export PATH=/opt/X11/bin:$PATH
 export PATH=~/.rvm/bin:$PATH
 export PATH=~/Workspace/scripts:$PATH
 export PATH=/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH
+export PATH="$PATH:`yarn global bin`"
