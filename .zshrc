@@ -10,6 +10,8 @@ source $ZSH/oh-my-zsh.sh
 
 # link other config
 source ~/.git-flow-completion.zsh
+# install https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # common alias
 alias ..='cd ..'
@@ -72,7 +74,6 @@ http_test() {
 }
 
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
