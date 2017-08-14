@@ -47,3 +47,8 @@
 	gpgsign = true
 [gpg]
 	program = gpg
+[secrets]
+	patterns = ssid\\s=\\s\".*\"
+	allowed = ssid\\s=\\s\"secret\"
+	patterns = password\\s=\\s\".*\"
+	allowed = password\\s=\\s\"secret\"
