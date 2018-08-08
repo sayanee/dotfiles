@@ -8,9 +8,9 @@ plugins=(git git-flow docker bgnotify zsh-syntax-highlighting)
 unsetopt SHARE_HISTORY
 source $ZSH/oh-my-zsh.sh
 
-# link other config
+# https://github.com/bobthecow/git-flow-completion/blob/master/git-flow-completion.zsh
 source ~/.git-flow-completion.zsh
-# install https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # common alias

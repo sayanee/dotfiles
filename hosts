@@ -24,6 +24,7 @@
 127.0.0.1   apps.facebook.com
 127.0.0.1   twitter.com
 127.0.0.1   youtube.com
+127.0.0.1   instagram.com
 
 # Block on IPv6
 fe80::1%lo0 facebook.com
@@ -40,3 +41,4 @@ fe80::1%lo0 www.connect.facebook.net
 fe80::1%lo0 apps.facebook.com
 fe80::1%lo0 twitter.com
 fe80::1%lo0 youtube.com
+fe80::1%lo0 instagram.com
