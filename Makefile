@@ -1,33 +1,30 @@
+CURDIR = $(shell pwd)
+
 install:
 	# .gitconfig
 	touch ~/.gitconfig
 	mv ~/.gitconfig ~/.gitconfig.original
-	cp .gitconfig ~/.gitconfig
+	ln -s $(CURDIR)/gitconfig ~/.gitconfig
 
 	# .gitignore
 	touch ~/.gitignore
 	mv ~/.gitignore ~/.gitignore.original
-	cp .gitignore ~/.gitignore
+	ln -s $(CURDIR)/gitignore ~/.gitignore
 
 	# .zshrc
 	touch ~/.zshrc
 	mv ~/.zshrc ~/.zshrc.original
-	cp .zshrc ~/.zshrc
+	ln -s $(CURDIR)/zshrc ~/.zshrc
 
 	# .zshenv
 	touch ~/.zshenv
 	mv ~/.zshenv ~/.zshenv.original
-	cp .zshenv ~/.zshenv
-
-	# ohmyzsh theme
-	touch ~/.oh-my-zsh/themes/sayanee.zsh-theme
-	mv ~/.oh-my-zsh/themes/sayanee.zsh-theme ~/.oh-my-zsh/themes/sayanee.zsh-theme.original
-	cp sayanee.zsh-theme ~/.oh-my-zsh/themes/sayanee.zsh-theme
+	ln -s $(CURDIR)/zshenv ~/.zshenv
 
 	# editor config
 	touch ~/.atom/config.cson
 	mv ~/.atom/config.cson ~/.atom/config.cson.original
-	cp config.cson ~/.atom/config.cson
+	ln -s $(CURDIR)/config.cson ~/.atom/config.cson
 
 	# hosts
 	sudo mv /etc/hosts /etc/hosts.original

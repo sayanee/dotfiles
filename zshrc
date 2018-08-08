@@ -1,6 +1,6 @@
 # ZSH config
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="sayanee"
+ZSH_THEME="bira"
 CASE_SENSITIVE="false"
 SHELL="/bin/zsh"
 COMPLETION_WAITING_DOTS="true"
@@ -10,8 +10,6 @@ source $ZSH/oh-my-zsh.sh
 
 # https://github.com/bobthecow/git-flow-completion/blob/master/git-flow-completion.zsh
 source ~/.git-flow-completion.zsh
-# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # common alias
 alias ..='cd ..'
@@ -78,5 +76,3 @@ http_test() {
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-source $HOME/.profile_others.sh

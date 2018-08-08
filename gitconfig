@@ -1,0 +1,54 @@
+[user]
+	name = Sayanee
+	email = sayanee@gmail.com
+	signingkey = 7E893AC202357D5E
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = always
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+	added = yellow
+  changed = green
+  untracked = cyan
+[core]
+	excludesfile = /Users/sayanee/.gitignore
+[credential]
+  helper = osxkeychain
+[push]
+	default = simple
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[help]
+  autocorrect = 10
+[mergetool]
+	keepBackup = true
+[alias]
+	dc = "diff --cached"
+	log1 = "log --oneline"
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[secrets]
+	patterns = ssid\\s=\\s\".*\"
+	allowed = ssid\\s=\\s\"secret\"
+	patterns = password\\s=\\s\".*\"
+	allowed = password\\s=\\s\"secret\"
