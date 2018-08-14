@@ -7,11 +7,15 @@
     excludeVcsIgnoredPaths: false
     packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   "custom-title":
     template: "<%= fileName %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
   editor:
     backUpBeforeSaving: true
-    fontSize: 19
+    fontSize: 26
     invisibles: {}
     preferredLineLength: 120
     scrollPastEnd: true
