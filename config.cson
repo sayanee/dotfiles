@@ -15,7 +15,7 @@
     template: "<%= fileName %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
   editor:
     backUpBeforeSaving: true
-    fontSize: 26
+    fontSize: 19
     invisibles: {}
     preferredLineLength: 120
     scrollPastEnd: true
