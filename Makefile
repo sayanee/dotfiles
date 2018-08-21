@@ -21,6 +21,10 @@ install:
 	mv ~/.zshenv ~/.zshenv.original
 	ln -s $(CURDIR)/zshenv ~/.zshenv
 
+	# oh-my-zsh theme
+	rm -f ~/.oh-my-zsh/themes/sayanee.zsh-theme
+	ln -s $(CURDIR)/sayanee.zsh-theme ~/.oh-my-zsh/themes/sayanee.zsh-theme
+
 	# editor config
 	touch ~/.atom/config.cson
 	mv ~/.atom/config.cson ~/.atom/config.cson.original
