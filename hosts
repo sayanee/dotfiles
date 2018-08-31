@@ -23,8 +23,6 @@
 127.0.0.1   www.connect.facebook.net
 127.0.0.1   apps.facebook.com
 127.0.0.1   twitter.com
-127.0.0.1   youtube.com
-127.0.0.1   www.youtube.com
 127.0.0.1   instagram.com
 127.0.0.1   www.instagram.com
 
@@ -42,8 +40,6 @@ fe80::1%lo0 connect.facebook.net
 fe80::1%lo0 www.connect.facebook.net
 fe80::1%lo0 apps.facebook.com
 fe80::1%lo0 twitter.com
-fe80::1%lo0 youtube.com
 fe80::1%lo0 instagram.com
 fe80::1%lo0 www.twitter.com
-fe80::1%lo0 www.youtube.com
 fe80::1%lo0 www.instagram.com
