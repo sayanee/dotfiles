@@ -2,43 +2,19 @@
   autosave:
     enabled: true
   core:
-    audioBeep: false
-    closeDeletedFileTabs: true
-    excludeVcsIgnoredPaths: false
-    packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
-  "custom-title":
-    template: "<%= fileName %><% if (projectPath) { %> - <%= projectPath %><% if (gitHead) { %> [<%= gitHead %>]<% } %><% } %>"
   editor:
-    backUpBeforeSaving: true
-    fontSize: 19
-    invisibles: {}
-    preferredLineLength: 120
+    fontSize: 22
     scrollPastEnd: true
-    showIndentGuide: true
     softWrap: true
-    softWrapAtPreferredLineLength: true
-    zoomFontWhenCtrlScrolling: true
   "exception-reporting":
-    userId: "23726a94-4d58-6922-8de3-2676f1bd97ca"
-  pigments:
-    extendAutocompleteToColorValue: true
-    extendAutocompleteToVariables: true
-  "release-notes":
-    viewedVersion: "0.94.0"
-  "tree-view":
-    hideVcsIgnoredFiles: true
-    squashDirectoryNames: true
-  "tree-view-open-files": {}
+    userId: "c0f59876-8ce3-42c6-824c-22e0f8fe3238"
   welcome:
     showOnStartup: false
-  wordcount:
-    alwaysOn: true
-    noextension: true
 ".css.source.stylus":
   editor:
     preferredLineLength: 120
