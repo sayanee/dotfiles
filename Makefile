@@ -33,3 +33,8 @@ install:
 	# hosts
 	sudo mv /etc/hosts /etc/hosts.original
 	sudo cp hosts /etc/hosts
+
+	# .gemrc
+	touch ~/.gemrc
+	mv ~/.gemrc ~/.gemrc.original
+	ln -s $(CURDIR)/gemrc ~/.gemrc
