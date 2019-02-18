@@ -22,6 +22,7 @@
   untracked = cyan
 [core]
 	excludesfile = /Users/sayanee/.gitignore
+	editor = vim
 [credential]
   helper = osxkeychain
 [push]
