@@ -8,11 +8,15 @@
       "one-light-syntax"
     ]
   editor:
-    fontSize: 25
+    fontSize: 20
     scrollPastEnd: true
     softWrap: true
   "exception-reporting":
     userId: "c0f59876-8ce3-42c6-824c-22e0f8fe3238"
+  "markdown-preview":
+    useGitHubStyle: true
+  tablr:
+    copyPaste: {}
   welcome:
     showOnStartup: false
 ".css.source.stylus":
