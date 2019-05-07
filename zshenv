@@ -15,3 +15,5 @@ export PATH=/usr/local/sbin:$PATH
 
 export PATH=/opt/X11/bin:$PATH
 export PATH=~/.rvm/bin:$PATH
+
+export PATH=~/Documents/scripts:$PATH
