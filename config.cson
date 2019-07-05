@@ -8,7 +8,7 @@
       "one-light-syntax"
     ]
   editor:
-    fontSize: 20
+    fontSize: 19
     scrollPastEnd: true
     softWrap: true
   "exception-reporting":
