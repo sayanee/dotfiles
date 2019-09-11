@@ -7,9 +7,8 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git node npm github git-flow docker bgnotify zsh-syntax-highlighting zsh-autosuggestions git-open)
 unsetopt SHARE_HISTORY
 source $ZSH/oh-my-zsh.sh
-
-# https://github.com/bobthecow/git-flow-completion/blob/master/git-flow-completion.zsh
 source ~/.git-flow-completion.zsh
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # common alias
 alias ..='cd ..'
@@ -25,7 +24,7 @@ alias prof='atom ~/.zshrc'
 alias src='source ~/.zshrc'
 alias screenshare='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 
-# cli alias 
+# cli alias
 alias ls='exa'
 alias cat='bat'
 
@@ -73,6 +72,15 @@ http_test() {
     fi
     sleep $sleepTime
   done
+}
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+iterm2_print_user_vars() {
+  # extend this to add whatever
+  # you want to have printed out in the status bar
+  iterm2_set_user_var nodeVersion $(node -v)
+  iterm2_set_user_var rubyVersion $(ruby --version | awk '{ print $2 }')
 }
 
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh

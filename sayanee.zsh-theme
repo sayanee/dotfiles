@@ -12,8 +12,9 @@ fi
 
 local current_dir='%{$terminfo[bold]$fg[blue]%}%~%{$reset_color%}'
 local git_branch='$(git_prompt_info)%{$reset_color%}'
+local timestamp='%{$fg_bold[magenta]%}[%*]%{$reset_color%}'
 
-PROMPT="╭─ ${current_dir} ${git_branch}
+PROMPT="╭─ ${current_dir} ${git_branch}${timestamp}
 ╰─%B${user_symbol}%b "
 RPS1="%B${return_code}%b"
 
