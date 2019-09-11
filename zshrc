@@ -4,7 +4,7 @@ ZSH_THEME="sayanee"
 CASE_SENSITIVE="false"
 SHELL="/bin/zsh"
 COMPLETION_WAITING_DOTS="true"
-plugins=(git git-flow docker bgnotify zsh-syntax-highlighting)
+plugins=(git node npm github git-flow docker bgnotify zsh-syntax-highlighting zsh-autosuggestions git-open)
 unsetopt SHARE_HISTORY
 source $ZSH/oh-my-zsh.sh
 
@@ -24,6 +24,10 @@ alias server="python -m SimpleHTTPServer 8000 && open http://localhost:8000"
 alias prof='atom ~/.zshrc'
 alias src='source ~/.zshrc'
 alias screenshare='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
+
+# cli alias 
+alias ls='exa'
+alias cat='bat'
 
 # common git alias
 alias ga='git add '
