@@ -9,6 +9,7 @@ unsetopt SHARE_HISTORY
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # common alias
 alias ..='cd ..'
