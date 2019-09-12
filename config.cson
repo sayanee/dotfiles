@@ -8,15 +8,22 @@
       "one-light-syntax"
     ]
   editor:
-    fontSize: 22
+    fontSize: 20
     scrollPastEnd: true
     softWrap: true
   "exception-reporting":
     userId: "c0f59876-8ce3-42c6-824c-22e0f8fe3238"
+  "file-icons":
+    coloured: false
+  "linter-ui-default":
+    showPanel: true
+    useBusySignal: false
   "markdown-preview":
     useGitHubStyle: true
   tablr:
     copyPaste: {}
+  "tool-bar":
+    position: "Left"
   welcome:
     showOnStartup: false
 ".css.source.stylus":
