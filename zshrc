@@ -82,6 +82,7 @@ iterm2_print_user_vars() {
   # you want to have printed out in the status bar
   iterm2_set_user_var nodeVersion $(node -v)
   iterm2_set_user_var rubyVersion $(ruby --version | awk '{ print $2 }')
+  iterm2_set_user_var pythonVersion $(python3 --version | awk '{ print $2 }')
 }
 
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
