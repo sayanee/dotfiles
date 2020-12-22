@@ -23,6 +23,7 @@
 [core]
 	excludesfile = /Users/sayanee/.gitignore
 	editor = vim
+	ignorecase = false
 [credential]
   helper = osxkeychain
 [push]
