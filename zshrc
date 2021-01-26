@@ -38,7 +38,7 @@ alias gl="git log --graph --abbrev-commit --decorate --date=short --format=forma
 alias goo='git checkout '
 alias gp='git pull && git push'
 alias gr='git add -u && git commit -m '
-alias gs='git status '
+alias gs='git status --untracked-files'
 alias gsq='git rebase -i master'
 
 # https://gist.github.com/SlexAxton/4989674
