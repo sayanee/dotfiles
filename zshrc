@@ -33,13 +33,11 @@ alias cat='bat'
 alias ga='git add '
 alias gb='git branch '
 alias gc='git add . && git commit -m '
-alias gj='git push origin master && git status && git checkout gh-pages && git rebase master && git push origin gh-pages && git checkout master && git status'
 alias gl="git log --graph --abbrev-commit --decorate --date=short --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar on %cd)%C(reset) %C(cyan)%s%C(reset) %C(red)by %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias goo='git checkout '
 alias gp='git pull && git push'
 alias gr='git add -u && git commit -m '
 alias gs='git status --untracked-files'
-alias gsq='git rebase -i master'
 
 # https://gist.github.com/SlexAxton/4989674
 gifify() {
