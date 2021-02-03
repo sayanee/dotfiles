@@ -25,11 +25,6 @@ install:
 	rm -f ~/.oh-my-zsh/themes/sayanee.zsh-theme
 	ln -s $(CURDIR)/sayanee.zsh-theme ~/.oh-my-zsh/themes/sayanee.zsh-theme
 
-	# editor config
-	touch ~/.atom/config.cson
-	mv ~/.atom/config.cson ~/.atom/config.cson.original
-	ln -s $(CURDIR)/config.cson ~/.atom/config.cson
-
 	# hosts
 	sudo mv /etc/hosts /etc/hosts.original
 	sudo cp hosts /etc/hosts
