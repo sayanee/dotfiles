@@ -4,12 +4,14 @@ ZSH_THEME="sayanee"
 CASE_SENSITIVE="false"
 SHELL="/bin/zsh"
 COMPLETION_WAITING_DOTS="true"
-plugins=(git node npm github git-flow docker bgnotify zsh-syntax-highlighting zsh-autosuggestions git-open)
+plugins=(git node npm github git-flow docker bgnotify git-open)
 unsetopt SHARE_HISTORY
+
+ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 source ~/.git-flow-completion.zsh
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # common alias
 alias ..='cd ..'
