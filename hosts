@@ -27,6 +27,8 @@
 127.0.0.1   www.instagram.com
 127.0.0.1   linkedin.com
 127.0.0.1   www.linkedin.com
+127.0.0.1   studio.youtube.com
+127.0.0.1   www.studio.youtube.com
 
 # Block on IPv6
 fe80::1%lo0 facebook.com
@@ -47,3 +49,5 @@ fe80::1%lo0 instagram.com
 fe80::1%lo0 www.instagram.com
 fe80::1%lo0 linkedin.com
 fe80::1%lo0 www.linkedin.com
+fe80::1%lo0 studio.youtube.com
+fe80::1%lo0 www.studio.youtube.com

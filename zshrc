@@ -32,6 +32,7 @@ alias ls='exa'
 alias cat='bat'
 
 # common git alias
+alias git='/usr/local/bin/git' # take the brew install
 alias ga='git add '
 alias gb='git branch '
 alias gc='git add . && git commit -m '
