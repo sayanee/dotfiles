@@ -1,6 +1,10 @@
 CURDIR = $(shell pwd)
 
 install:
+	# SSH config
+	rm -f ~/.ssh/config
+	ln -s $(CURDIR)/ssh/config ~/.ssh/config
+
 	# .gitconfig
 	touch ~/.gitconfig
 	mv ~/.gitconfig ~/.gitconfig.original
