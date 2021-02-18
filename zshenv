@@ -5,6 +5,7 @@ export LSCOLORS="gafxcxdxbxegedabagacad"
 export LC_CTYPE="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export GOPATH="$HOME/Workspace/"
+export PICO_SDK_PATH=~/Documents/pico/pico-sdk
 
 export PATH=/bin:$PATH
 export PATH=/sbin:$PATH

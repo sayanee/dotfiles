@@ -23,9 +23,7 @@ alias ll='ls -lah'
 alias man="man -a"
 alias rd='rm -rf'
 alias server="python -m SimpleHTTPServer 8000 && open http://localhost:8000"
-alias prof='atom ~/.zshrc'
 alias src='source ~/.zshrc'
-alias screenshare='open /System/Library/CoreServices/Applications/Screen\ Sharing.app/'
 
 # cli alias
 alias ls='exa'
@@ -86,8 +84,8 @@ iterm2_print_user_vars() {
   iterm2_set_user_var pythonVersion $(python3 --version | awk '{ print $2 }')
 }
 
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/usr/local/opt/texinfo/bin:$PATH"
