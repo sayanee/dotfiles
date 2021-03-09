@@ -37,3 +37,7 @@ install:
 	touch ~/.gemrc
 	mv ~/.gemrc ~/.gemrc.original
 	ln -s $(CURDIR)/gemrc ~/.gemrc
+
+		# VS Code settings
+	mv ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/settings.json.original
+	ln -s .vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
