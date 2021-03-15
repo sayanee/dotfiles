@@ -5,7 +5,7 @@ Host github.com
   IdentitiesOnly=yes
 
 Host wavpi
-  Hostname 10.0.1.33
+  HostName 10.0.1.33
   User sayanee
   AddKeysToAgent yes
   UseKeychain yes
