@@ -19,7 +19,7 @@ NUMBER_OF_EMOJIS=${#PS1_EMOJIS[@]}
 THEME_DELIMITER="%{$fg_bold[blue]%}›%{$reset_color%}%{$fg_bold[red]%}›%{$reset_color%}%{$fg_bold[green]%}›%{$reset_color%}"
 
 PROMPT="
-${PS1_EMOJIS[$RANDOM % $NUMBER_OF_EMOJIS]} $THEME_DELIMITER ${current_dir} ${git_branch}${timestamp}
+${PS1_EMOJIS[$RANDOM % $NUMBER_OF_EMOJIS]} $THEME_DELIMITER ${current_dir} ${git_branch}
 %B${user_symbol}%b "
 RPS1="%B${return_code}%b"
 
