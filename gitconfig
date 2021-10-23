@@ -54,3 +54,5 @@
 	allowed = ssid\\s=\\s\"secret\"
 	patterns = password\\s=\\s\".*\"
 	allowed = password\\s=\\s\"secret\"
+[init]
+	defaultBranch = main

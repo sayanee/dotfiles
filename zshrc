@@ -89,3 +89,4 @@ iterm2_print_user_vars() {
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/usr/local/opt/texinfo/bin:$PATH"
+export GEM_HOME="$HOME/.gem"
