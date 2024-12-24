@@ -10,9 +10,6 @@ plugins=(
   npm
   github
   bgnotify
-  git-open
-  zsh-syntax-highlighting
-  zsh-autosuggestions
 )
 unsetopt SHARE_HISTORY
 
@@ -52,20 +49,8 @@ killport() {
   kill -TERM `lsof -t -i:$1`
 }
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-iterm2_print_user_vars() {
-  # extend this to add whatever
-  # you want to have printed out in the status bar
-  iterm2_set_user_var nodeVersion $(node -v)
-  iterm2_set_user_var rubyVersion $(ruby --version | awk '{ print $2 }')
-  iterm2_set_user_var pythonVersion $(python3 --version | awk '{ print $2 }')
-}
-
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-export GPG_TTY=$(tty)
-export GEM_HOME="$HOME/.gem"
 
-export PATH="$HOME/.gem/bin:$PATH"
-export PATH="$HOME/.rvm/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
