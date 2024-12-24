@@ -1,7 +1,7 @@
 [user]
 	name = Sayanee
 	email = sayanee@gmail.com
-	signingkey = B3A48136D2960065
+	signingkey = 4448D2D2DBF2A398
 [color]
 	diff = auto
 	status = auto
@@ -28,12 +28,6 @@
   helper = osxkeychain
 [push]
 	default = current
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [help]
   autocorrect = 10
 [mergetool]

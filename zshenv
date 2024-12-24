@@ -19,3 +19,4 @@ export PATH=~/.rvm/bin:$PATH
 export PATH=~/Library/Python/3.9/bin:$PATH
 
 export PATH=~/Documents/scripts:$PATH
+. "$HOME/.cargo/env"

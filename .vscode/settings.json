@@ -29,7 +29,7 @@
     "[cpp]": {
         "editor.semanticHighlighting.enabled": true,
         "editor.suggest.insertMode": "replace",
-        "editor.wordBasedSuggestions": true
+        "editor.wordBasedSuggestions": "matchingDocuments"
     },
     "arduino.defaultBaudRate": 9600,
     "arduino.path": "/Applications/Arduino.app",
@@ -58,6 +58,7 @@
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.cursorBlinking": "smooth",
     "editor.cursorStyle": "block",
+    "editor.folding": true,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 17,
@@ -70,8 +71,9 @@
         "strings": true
     },
     "editor.renderWhitespace": "none",
+    "editor.showFoldingControls": "always",
     "editor.tabSize": 2,
-    "editor.wordBasedSuggestions": true,
+    "editor.wordBasedSuggestions": "matchingDocuments",
     "editor.wordWrap": "on",
     "explorer.confirmDelete": false,
     "files.autoSave": "onFocusChange",
@@ -82,13 +84,38 @@
     "html.format.endWithNewline": true,
     "python.showStartPage": false,
     "window.title": "${dirty} ${activeEditorLong}${separator}${rootName}",
-    "window.zoomLevel": 1,
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Winter is Coming (Dark Black - No Italics)",
+    "workbench.colorTheme": "Bluloco Light",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.wrapTabs": true,
     "workbench.settings.editor": "json",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "idf.espIdfPath": "/Users/sayanee/esp/esp-idf",
+    "idf.pythonBinPath": "/Users/sayanee/.espressif/python_env/idf5.1_py3.11_env/bin/python",
+    "idf.toolsPath": "/Users/sayanee/.espressif",
+    "idf.customExtraPaths": "/Users/sayanee/.espressif/tools/xtensa-esp-elf-gdb/12.1_20221002/xtensa-esp-elf-gdb/bin:/Users/sayanee/.espressif/tools/riscv32-esp-elf-gdb/12.1_20221002/riscv32-esp-elf-gdb/bin:/Users/sayanee/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin:/Users/sayanee/.espressif/tools/xtensa-esp32s2-elf/esp-12.2.0_20230208/xtensa-esp32s2-elf/bin:/Users/sayanee/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin:/Users/sayanee/.espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin:/Users/sayanee/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Users/sayanee/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin:/Users/sayanee/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230419/openocd-esp32/bin:/Users/sayanee/.espressif/tools/ninja/1.10.2:/Users/sayanee/.espressif/tools/esp-rom-elfs/20230320",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "/Users/sayanee/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230419/openocd-esp32/share/openocd/scripts",
+        "ESP_ROM_ELF_DIR": "/Users/sayanee/.espressif/tools/esp-rom-elfs/20230320/"
+    },
+    "idf.gitPath": "git",
+    "git.openRepositoryInParentFolders": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.empty.hint": "hidden",
+    "extensions.ignoreRecommendations": true,
+    "workbench.activityBar.location": "hidden",
+    "window.zoomLevel": 1,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "idf.showOnboardingOnInit": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "idf.pythonInstallPath": "/usr/local/opt/python@3.11/Frameworks/Python.framework/Versions/3.11/bin/python3",
+    "idf.hasWalkthroughBeenShown": true
 }

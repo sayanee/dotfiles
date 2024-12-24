@@ -4,14 +4,20 @@ ZSH_THEME="sayanee"
 CASE_SENSITIVE="false"
 SHELL="/bin/zsh"
 COMPLETION_WAITING_DOTS="true"
-plugins=(git node npm github git-flow docker bgnotify git-open)
+plugins=(
+  git
+  node
+  npm
+  github
+  bgnotify
+  git-open
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
 unsetopt SHARE_HISTORY
 
 ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
-source ~/.git-flow-completion.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # common alias
 alias ..='cd ..'
@@ -24,10 +30,13 @@ alias man="man -a"
 alias rd='rm -rf'
 alias server="python -m SimpleHTTPServer 8000 && open http://localhost:8000"
 alias src='source ~/.zshrc'
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+alias xtractaudio='youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 -q --restrict-filenames https://www.youtube.com/watch\?v\='
+alias xtractvideo="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'  https://www.youtube.com/watch\?v\="
 
 # cli alias
-alias ls='exa'
-alias cat='bat'
+# alias ls='exa'
+# alias cat='bat'
 
 # common git alias
 alias git='/usr/local/bin/git' # take the brew install
@@ -85,8 +94,11 @@ iterm2_print_user_vars() {
 }
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="/usr/local/opt/texinfo/bin:$PATH"
+export GPG_TTY=$(tty)
 export GEM_HOME="$HOME/.gem"
+
+export PATH="$HOME/.gem/bin:$PATH"
+export PATH="$HOME/.rvm/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.pyenv/versions/3.12.0/lib/python3.12/site-packages:$PATH"
+export PATH=$(pyenv root)/shims:$PATH
